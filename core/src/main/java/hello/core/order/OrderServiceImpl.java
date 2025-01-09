@@ -6,7 +6,9 @@ import hello.core.discount.RateDiscountPolicy;
 import hello.core.member.Member;
 import hello.core.member.MemberRepository;
 import hello.core.member.MemoryMemberRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class OrderServiceImpl implements OrderService{
 
     private final MemberRepository memberRepository;
