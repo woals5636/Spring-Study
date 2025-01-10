@@ -1,15 +1,23 @@
 package hello.core;
 
+import hello.core.member.MemberRepository;
+import hello.core.member.MemoryMemberRepository;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
 
 @Configuration
 @ComponentScan(
-        excludeFilters = @ComponentScan.Filter(type= FilterType.ANNOTATION, classes = Configuration.class)
-        // 기존에 구현하였던 @Configuration 을 제외하도록 설정
+        excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class)
 )
 
 public class AutoAppConfig {
+/*
 
+    @Bean(name="memoryMemberRepository")
+    MemberRepository memberRepository(){
+        return new MemoryMemberRepository();
+    }
+*/
 }
