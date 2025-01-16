@@ -27,15 +27,14 @@ public class RequestHeaderServlet extends HttpServlet {
     private void printStartLine(HttpServletRequest request) {
         System.out.println("--- REQUEST-LINE - start ---");
         System.out.println("request.getMethod() = " + request.getMethod()); //GET
-        System.out.println("request.getProtocol() = " + request.getProtocol()); //HTTP/1.1
+        System.out.println("request.getProtocol() = " + request.getProtocol()); // HTTP/1.1
         System.out.println("request.getScheme() = " + request.getScheme()); //http
         // http://localhost:8080/request-header
         System.out.println("request.getRequestURL() = " + request.getRequestURL());
         // /request-header
         System.out.println("request.getRequestURI() = " + request.getRequestURI());
         //username=hi
-        System.out.println("request.getQueryString() = " +
-                request.getQueryString());
+        System.out.println("request.getQueryString() = " + request.getQueryString());
         System.out.println("request.isSecure() = " + request.isSecure()); //https 사용 유무
         System.out.println("--- REQUEST-LINE - end ---");
         System.out.println();
@@ -45,7 +44,6 @@ public class RequestHeaderServlet extends HttpServlet {
     private void printHeaders(HttpServletRequest request) {
         System.out.println("--- Headers - start ---");
         /*
-            // 과거 방식
          Enumeration<String> headerNames = request.getHeaderNames();
          while (headerNames.hasMoreElements()) {
          String headerName = headerNames.nextElement();
