@@ -4,11 +4,10 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/message" />
-        <option name="gradleJvm" value="17" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/validation" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/message" />
+            <option value="$PROJECT_DIR$/validation" />
           </set>
         </option>
       </GradleProjectSettings>
